@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your baap er bank account</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section class="w-9/12 mx-auto mt-24 ">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-semibold">Let's get some Mooooooooney 🤑</h1>
+        </div>
+        <div class="grid grid-cols-3 gap-4">
+            <div class="bg-green-400 text-white p-10 rounded-lg">
+                <h3 class="text-2xl">Deposit</h3>
+                <h2 class="text-5xl">$<span id="deposit-initial">00</span></h2>
+            </div>
+            <div class="bg-red-400 text-white p-10 rounded-lg">
+                <h3 class="text-2xl">Withdraw</h3>
+                <h2 class="text-5xl">$<span id="withdraw-initial">00</span></h2>
+            </div>
+            <div class="bg-teal-400 text-white p-10 rounded-lg">
+                <h3 class="text-2xl">Balance</h3>
+                <h2 class="text-5xl">$<span id="balance-amount">500</span></h2>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 gap-5 mt-10">
+            <div class="bg-sky-400 p-10 rounded-lg">
+                <input type="text" placeholder="$ Enter your deposit amount" id="deposit-amount" class="input input-bordered w-full max-w-md block my-2 focus:outline-none" />
+                <button id="deposit-btn" class="btn btn-wide mt-5 bg-neutral-700 border-neutral-600 text-white hover:text-neutral-700">Deposit</button>
+            </div>
+            <div class="bg-lime-500 p-10 rounded-lg">
+                <input type="text" placeholder="$ Enter your withdraw amount" id="withdraw-amount" class="input input-bordered w-full max-w-md block my-2 focus:outline-none" />
+                <button id="withdraw-btn" class="btn btn-wide mt-5 bg-neutral-700 border-neutral-600 text-white hover:text-neutral-700">Withdraw</button>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+</html>
